@@ -15,9 +15,7 @@ const Navbar = () => {
     {
       title: "Home",  href: "/",
     },
-    {
-        title: "Case Studies",  href: route('study'),
-      },
+    
   ]
 
   return (
@@ -52,7 +50,7 @@ const Navbar = () => {
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             <span className="sr-only">Menu</span>
           </Button>
-          <Button className="hidden md:inline-flex">Connect</Button>
+          <Button variant="custom" className="hidden md:inline-flex">Connect</Button>
         </div>
       </div>
 
@@ -74,7 +72,7 @@ const Navbar = () => {
             ))}
 
           <div className="px-3 py-2">
-            <Button className="w-full">Connect</Button>
+            <Button variant="custom" className="w-full">Connect</Button>
           </div>
         </div>
       </div>
